@@ -1,0 +1,156 @@
+:root {
+    --body: #1a1a1a;
+    --skin: #f2f2f2;
+    --makeup: #9282c4;
+    --eyes-bag: #4d4d4d;
+}
+
+body {
+    display: grid;
+    min-height: 100vh;
+    place-items: center;
+}
+
+.patata-container {
+    width: 500px;
+    height: 500px;
+    background-color: lightblue;
+    position: relative;
+}
+
+.head, 
+.body,
+.face {
+    position: absolute;
+    width: 300px;
+    height: 340px;
+    background-color: var(--body);
+    border-radius: 50%;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.head {
+    top: 0;
+    z-index: 1;
+}
+
+.body {
+    width: 350px;
+    height: 370px;
+    top: 110px;
+}
+
+.face {
+    top: 20px;
+    background-color: var(--skin);
+    width: 220px;
+    height: 270px;
+    
+}
+
+.eyes,
+.eyes-bag {
+    position: relative;
+    width: 160px;
+    top: 100px;
+    left: 30px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.left-eye,
+.right-eye,
+.left-bag,
+.right-bag,
+.mouth,
+.chin {
+    background-color: var(--body);
+    width: 50px;
+    height: 20px;
+    border-radius: 50%;
+}
+
+.eyes-bag {
+    top: 108px;
+    left: 40px;
+    width: 140px;
+}
+
+.left-bag,
+.right-bag {
+    width: 35px;
+    height: 8px;
+}
+
+.mouth,
+.chin {
+    position: relative;
+    left: 50%;
+    top: 185px;
+    transform: translateX(-50%);
+    width: 60px;
+    height: 25px;
+}
+
+.chin {
+    background-color: var(--makeup);
+    top: 200px;
+    width: 35px;
+    height: 10px;
+}
+
+.eyesbrows {
+    position: relative;
+}
+
+.left-eyesbrow,
+.right-eyesbrow,
+.left-cheek,
+.right-cheek {
+    position: absolute;
+    border-right: 25px solid transparent;
+    border-left: 25px solid transparent;
+    border-top: 70px solid var(--makeup);
+    border-radius: 24px;
+    transform: rotate(180deg);
+    left: 30px;
+    top: 25px;
+}
+
+.right-eyesbrow,
+.right-cheek {
+    left: 140px;
+}
+
+.left-cheek,
+.right-cheek {
+    transform: rotate(0);
+    top: 145px;
+    border-top-width: 90px
+
+}
+
+.eye {
+    position: relative;
+    width: 10px;
+    height: 10px;
+    background-color: red;
+    border-radius: 50%;
+    top: 6px;
+    left: 20px;
+    z-index: 10;
+}
+
+.body-shadow {
+    position: absolute;
+    background-color: #1a1a1aaf;
+    width: 300px;
+    height: 70px;
+    border-radius: 50%;
+    top: 428px;
+    left: 20%;
+
+}
+
+
